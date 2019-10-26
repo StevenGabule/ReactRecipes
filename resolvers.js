@@ -1,22 +1,45 @@
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
 
 const createToken = (user, secret, expiresIn) => {
-    const { username, email} = user;
-    return jwt.sign({ username, email }, secret, {expiresIn});
+    const {username, email} = user;
+    return jwt.sign({username, email}, secret, {expiresIn});
 };
 
 exports.resolvers = {
     Query: {
         getAllRecipes: async (root, args, {Recipe}) => {
-            return Recipe.find().sort({createdDate: 'desc'});
+            const allRecipes = await Recipe.find().sort({createdDate: "desc"});
+            return allRecipes;
         },
-
         getRecipe: async (root, {_id}, {Recipe}) => {
-            return Recipe.findOne({_id});
+            const recipe = await Recipe.findOne({_id});
+            return recipe;
         },
 
-        getCurrentUser: async (root, args, { currentUser, User }) => {
+        searchRecipes: async (root, {searchTerm}, {Recipe}) => {
+            if (searchTerm) {
+                const searchResults = await Recipe.find(
+                    {
+                        $text: {$search: searchTerm}
+                    },
+                    {
+                        score: {$meta: "textScore"}
+                    }
+                ).sort({
+                    score: {$meta: "textScore"}
+                });
+                return searchResults;
+            } else {
+                const recipes = await Recipe.find().sort({
+                    likes: "desc",
+                    createdDate: "desc"
+                });
+                return recipes;
+            }
+        },
+
+        getCurrentUser: async (root, args, {currentUser, User}) => {
             if (!currentUser) {
                 return null;
             }
@@ -29,7 +52,7 @@ exports.resolvers = {
         }
     },
     Mutation: {
-        addRecipe: async (root,{name, description, category, instructions, username}, {Recipe}) => {
+        addRecipe: async (root, {name, description, category, instructions, username}, {Recipe}) => {
             const newRecipe = await new Recipe({
                 name,
                 description,
@@ -40,7 +63,7 @@ exports.resolvers = {
             return newRecipe;
         },
 
-        signInUser: async (root, {username, password}, { User }) => {
+        signInUser: async (root, {username, password}, {User}) => {
             const user = await User.findOne({username});
             if (!user) {
                 throw new Error('User not found');
