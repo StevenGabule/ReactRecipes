@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3ece1a5-4ba5-4e9a-99b2-6dc04a672d22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/John_paul.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/react-recipes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/components/Auth/Signin.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/components/Auth/Signup.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/components/Error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Recipe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
@@ -47,6 +62,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\REACT_LEARNING\react-recipes\client\src\components\Profile" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\REACT_LEARNING\react-recipes\client\src\components\Auth" />
     </key>
@@ -73,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572077218575</updated>
-      <workItem from="1572077219935" duration="7979000" />
+      <workItem from="1572077219935" duration="14520000" />
     </task>
     <servers />
   </component>
@@ -90,5 +108,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/client" />
+    </ignored-roots>
   </component>
 </project>
