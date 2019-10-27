@@ -65,3 +65,15 @@ typings/
 
 # Serverless directories
 .serverless
+debug.log
+package-lock.json
+src/components/App.css
+src/components/App.js
+src/components/Auth/SignOut.js
+src/components/Navbar.js
+src/components/Profile/
+src/components/Recipe/
+src/components/Spinner.js
+src/components/withAuth.js
+src/components/withSession.js
+src/queries/
