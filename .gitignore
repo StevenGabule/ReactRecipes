@@ -66,7 +66,7 @@ typings/
 # Serverless directories
 .serverless
 debug.log
-package-lock.json
+/package-lock.json
 src/components/App.css
 src/components/App.js
 src/components/Auth/SignOut.js
