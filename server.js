@@ -8,7 +8,7 @@ require('dotenv').config({path: 'variables.env'});
 const Recipe = require('./models/Recipe');
 const User = require('./models/User');
 
-const {graphiqlExpress, graphqlExpress} = require('apollo-server-express');
+const {graphqlExpress} = require('apollo-server-express');
 const {makeExecutableSchema} = require('graphql-tools');
 
 const {typeDefs} = require('./schema');
