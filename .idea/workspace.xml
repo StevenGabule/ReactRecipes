@@ -60,7 +60,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/Auth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -69,6 +69,7 @@
       <recent name="D:\REACT_LEARNING\react-recipes\client\src\components\Profile" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\REACT_LEARNING\react-recipes\client\src\components" />
       <recent name="D:\REACT_LEARNING\react-recipes\client\src\components\Auth" />
     </key>
   </component>
@@ -94,7 +95,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572077218575</updated>
-      <workItem from="1572077219935" duration="44213000" />
+      <workItem from="1572077219935" duration="53123000" />
+      <workItem from="1572179283414" duration="329000" />
+      <workItem from="1572179629415" duration="7956000" />
     </task>
     <servers />
   </component>
@@ -106,7 +109,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
