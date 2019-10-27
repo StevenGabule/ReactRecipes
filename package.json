@@ -5,7 +5,8 @@
   "main": "server.js",
   "engines": {
     "node": "8.11.4",
-    "npm" : "5.6.0"
+    "npm" : "5.6.0",
+    "nodemon" : "^1.17.5"
   },
   "scripts": {
     "start": "node server.js",
